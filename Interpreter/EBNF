@@ -1,0 +1,11 @@
+Prog := begin StmtList end
+StmtList := Stmt; {Stmt;}
+Stmt := PrintStmt | AssignStmt | IfStmt
+PrintStmt := print ExprList
+IfStmt := if (Expr) then Stmt
+AssignStmt := Var = Expr
+ExprList := Expr {,Expr}
+Expr := Term {(+|-) Term}
+Term := Factor {(*|/) Factor}
+Var := ident
+Factor := ident | iconst | rconst | sconst | (Expr)

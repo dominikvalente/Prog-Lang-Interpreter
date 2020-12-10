@@ -1,0 +1,18 @@
+//Illegal String Operation
+begin
+  print "Good morning NJIT";
+  
+  //compute circle area and circumference
+  r = 5;
+  name = "Smith";
+  print name, " ", r;
+  sum = r + 7;
+  sum = sum + 2.5;
+  print "Sum: ", sum;
+  //Illegal string operation
+  name = name + "Hello";
+  print "name is ", name;
+  rem = sum - r;
+  
+end
+  
